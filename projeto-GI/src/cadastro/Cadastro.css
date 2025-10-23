@@ -1,0 +1,64 @@
+.containerRegister {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0;
+}
+
+  .formRegister {
+    background-color: #31313c;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Estilo dos inputs */
+  .inputRegister {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #282830;
+    color: #fff;
+  }
+
+  .inputRegister:focus {
+    outline: none;
+  }
+  
+  /* Estilo do botão de Register */
+  .buttonRegister {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(201, 50, 50); 
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .buttonRegister img {
+    margin-top: -14px;
+  }
+  
+  .buttonRegister:hover {
+    background-color: rgb(146, 24, 24); 
+  }
+  
+  /* Estilo do título */
+  .titleRegister {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+  }
+  

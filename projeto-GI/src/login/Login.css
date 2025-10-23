@@ -1,0 +1,83 @@
+.loginContainer {
+    border: solid 1px #000;
+    padding: 2%;
+    width: 40%;
+}
+
+.innerForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* input {
+    background-color: #fff;
+    color: #000;
+    border: solid 1px #000;
+} */
+
+.containerLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+  .formLogin {
+    background-color: #31313c;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+
+  .loginInput {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #282830;
+    color: #fff;
+  }
+
+  .loginInput:focus {
+    outline: none;
+  }
+  
+ 
+  .buttonLogin {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(201, 50, 50); 
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .buttonLogin img {
+    margin-top: -14px;
+  }
+  
+  .buttonLogin:hover {
+    background-color: rgb(146, 24, 24); 
+  }
+  
+
+  .titleLogin {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+  }
+  

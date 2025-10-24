@@ -26,7 +26,8 @@ function Login() {
     
           if (response.ok) {
             console.log("Login bem-sucedido!");
-            navigate("/timer"); // 👈 redireciona para o Timer
+            localStorage.setItem("usuarioId", data.id);
+            navigate("/timer");
           } else {
             setErro(data.message || "Falha no login");
           }

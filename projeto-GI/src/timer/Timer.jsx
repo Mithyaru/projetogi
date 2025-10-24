@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function Timer() {
-    const INITIAL_TIME = 25 * 60; 
+    const INITIAL_TIME = 25 * 60;
     const [timeLeft, setTimeLeft] = useState(INITIAL_TIME);
     const [isRunning, setIsRunning] = useState(false);
 
@@ -37,17 +38,24 @@ function Timer() {
     };
 
     return (
-        <div className="timer-container">
-            <h2 className="timer-display">{formatTime(timeLeft)}</h2>
-            <div className="timer-buttons">
-                <button onClick={handleStartPause} className="timer-btn">
-                    {isRunning ? "Pausar" : "Iniciar"}
-                </button>
-                <button onClick={handleReset} className="timer-btn reset">
-                    Resetar
-                </button>
+        <>
+            <div className="timer-container">
+                <h2 className="timer-display">{formatTime(timeLeft)}</h2>
+                <div className="timer-buttons">
+                    <button onClick={handleStartPause} className="timer-btn">
+                        {isRunning ? "Pausar" : "Iniciar"}
+                    </button>
+                    <button onClick={handleReset} className="timer-btn reset">
+                        Resetar
+                    </button>
+                </div>
             </div>
-        </div>
+            <div>
+                <p className="redirectText">
+                    Editar perfil <Link to="/Perfil">Perfil</Link>
+                </p>
+            </div>
+        </>
     );
 }
 
